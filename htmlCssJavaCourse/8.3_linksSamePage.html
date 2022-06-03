@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+<body>
+    <h1 id="top"> Links to Sections of the Same Page </h1>
+    <section>
+        <ul>
+           <!--Link to every section in the page-->
+           <li><a href="#section1"> #section1 </a></li>
+           <li><a href="#section2"> #section2 </a></li>
+           <li><a href="#section3"> #section3 </a></li>
+           <li><a href="#section4"> #section4 </a></li>
+           <li><a href="#section5"> #section5 </a></li>
+           <li><a href="#section6"> #section6 </a></li>
+        </ul>
+    </section>
+
+    <!--You can identify a section with a couple of different ways.
+        -You can have in any tag that has an id with that section name.
+        Notice that the section name does not contain # sign. Only the link
+        to that section contains the # sign. -->
+       <h2> Fields; Review of Gravity; Electric Field</h2>
+       <section id="section1">
+       <h3>(#section1) Section 1 </h3>
+       <h4>Topic Introduction</h4>
+       <p>The focus of this course is the study of electricity and magnetism. Basically, this is the study 
+        of how charges interact with each other. We study these interactions using the concept of 
+        “fields” which are both created by and felt by charges. Today we introduce fields in general 
+        as mathematical objects, and consider gravity as our first “field.” We then discuss how 
+        electric charges create electric fields and how those electric fields can in turn exert forces on 
+        other charges. The electric field is completely analogous to the gravitational field, where 
+        mass is replaced by electric charge, with the small exceptions that (1) charges can be either 
+        positive or negative while mass is always positive, and (2) while masses always attract, 
+        charges of the same sign repel (opposites attract). </p>
+    </section>
+
+    <section id="section2">
+    <h3>(#section2) Section 2 </h3>
+    <h4>Scalar Fields </h4>
+    <p> A scalar field is a function that gives us a single value of some variable for every point in 
+        space – for example, temperature as a function of position. We write a scalar field as a scalar 
+        function of position coordinates – e.g. T(x, y, z), T(r ,θ ,ϕ), or, more generically, T(r).
+    </p>
+    </section>
+
+    <section id="section3">
+        <h3>(#section3) Section 3 </h3>
+        <h4>Vector Fields </h4>
+        <p> A vector is a quantity which has both a magnitude and a direction in space (such as velocity 
+            or force). A vector field is a function that assigns a vector value to every point in space – for 
+            example, wind speed as a function of position. We write a vector field as a vector function of
+            position coordinates </p>
+    </section>
+
+    <section id="section4">
+        <h3>(#section4) Section 4 </h3>
+        <h4>Gravitational Fields </h4>
+        <p>As a first example of a physical vector field, we recall the gravitational force between two 
+            masses. This force can be broken into two parts: the generation of a “gravitational field” 
+            g by the first mass, and the force that that field exerts on the second mass (F=mg).
+            This way of thinking about forces – that objects create fields and that other objects 
+            then feel the effects of those fields – is a generic one that we will use throughout the course.
+        </p>
+    </section>
+
+    <section id="section5">
+        <h3>(#section5) Section 5 </h3>
+        <h4>Electric Fields </h4>
+        <p>Every charge creates around it an electric field, proportional to the size of the charge and 
+        decreasing as the inverse square of the distance from the charge. If another charge enters this
+        electric field, it will feel a force (F = qE).
+    </p>
+    </section>
+
+    <!--Another way is, if we scroll down all the way to the bottom of the page
+    is to create an anchor tag with a name attribute and name the section very 
+    similary to the way you name a section id. Put a # sign in front of the name
+    of the section and stick that value in the href attribute of an anchor tag. -->
+
+    <div>
+        <h3><a name="section6"> (#section6) Section 6 </a></h3>
+        <p>
+          <b>Back to the top:</b> <a href="#top"> Back to Top </a>
+        </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>The Box Model</title>
+
+<style>
+
+/*star * element says that go ahaed and select every element-block or inherit-there is and 
+apply these particular css properties to them. */
+    * {
+        /*include from the edge of the border to the other edge of the border*/
+        box-sizing: border-box; /*this is impotant you should use this 
+        and not inherited so you can't set it on the parent element*/
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: rgb(204, 224, 226);
+    }
+
+    #box {
+        background-color: rgb(35, 131, 134);
+        padding: 10px/*top*/ 10px/*rigt*/ 10px/*bottom*/ 10px/*left*/ 
+        /* we can write only 10px*/;
+        border: 3px solid rgb(12, 12, 90);
+        /*margin: 40px;*/
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 300px;
+        height: 100px;
+        overflow: auto;
+
+    }
+
+    #content {
+        background-color: rgb(125, 200, 235);
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        text-align: center;
+        color: rgb(12, 12, 90);
+    }
+</style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <div id="box">
+        <div id="content"> Yarım-dönü özelliğine
+             sahip olan fermiyonlardan farklı olarak tam-dönü özelliği gösteren bu taşıyıcı parçacıklara boson denir. Söz konusu
+             elektromanyetizma olunca bosonu gözlemlemek çok kolaydır, gözlerimiz çok gelişmiş birer algıç gibi farklı dalga
+             boylarındaki fotonları gözlemleyen birer makine gibidir. Yüksüz parçacıklar birer hayalet gibi bu kuvvetin etki
+             alanından sıyrılıp giderler. 
+        </div>
+    </div>
+</body>
+</html>

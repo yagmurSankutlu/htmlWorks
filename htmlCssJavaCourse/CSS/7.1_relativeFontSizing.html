@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        body {
+            font-size: 120%; /*sets how many percent to enlarge*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>Regular text</div>
+    <!-- What this is saying is it is relative to 
+        whatever the font size is at the moment 
+        we're applying it. Since we set the font size 
+        to 120% in the entire body this also received at
+        120% and when you combine this font size with this one-->
+    <div style="font-size: 2em;">2em text
+        <div style="font-size: 2em;">4em text
+            <div style="font-size: .5em;">2em again!</div>
+        </div>
+    </div>
+</body>
+</html>

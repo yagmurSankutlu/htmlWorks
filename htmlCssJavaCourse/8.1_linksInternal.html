@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Internal Links</title>
+</head>
+<body>
+    <h1>Internal Links</h1>
+    <section>Internal links point to internal web pages of the where 
+    application, the links we are showing are all relative URL links.
+    In this sample we are using links to the same web application 
+    that we are in.
+    </section>
+    <section>
+        We can link to a file in the same directory as this HTML file
+        like this:
+        <a href="8.0_same-directory.html" title="same dir link"> Linking 
+                to a file in the same directory </a>
+             <!--href stands for hyeprtext reference href can either be a relative or an absolute URL -->
+             <!--"Linking to a file in the same directory"is an inline tag since it is not forcing itself 
+             to go to a new line-->
+        <a href="8.0_same-directory.html" title="same dir link">  
+             <!--title attribute is used by the screen readers that help the visually impaired(görme engelli)
+             people get through the web page-->
+            <div> DIV Linking to a file in the same directory</div> 
+        </a>
+             <!--In between the opening and closing the "a" tags is the content we are going to see 
+             in the web page, when it is served and on which we are going to be able to click to go
+             to the href that the "a" tag is configurated with -->
+             <!--"DIV linking to a file in the same directory" we are surrounded our "div" tag with "a" tag
+             We used block level element, the "div", inside an inline element and this is correct usage of "a" 
+             because "a" is both a flow content and a phrasing content. In other words "a" tag is both an inline
+             element and a block level element at the same time-->
+
+    </section>
+</body>
+</html>

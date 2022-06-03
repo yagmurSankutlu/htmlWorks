@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Element with Class</title>
+
+<style>
+/*all with class="highLight"*/
+    .highLight {
+        color: ghostwhite;
+        background: darkorange;
+    }
+
+/*all p elements with class="highLight"*/
+    p.highLight {
+        font-style: italic;
+    }
+
+/*all elements with class="highLight" as well as with class="mainPoint"*/
+    .highLight.mainPoint {
+        color: rgb(6, 154, 156);
+        background: rgb(244, 247, 77);
+    }
+
+/*one that has id="question"*/
+    #question {
+        color: rgb(58, 74, 219);
+    }
+</style>
+</head>
+
+<body>
+    <h1 class="highLight">Element with Class Selector</h1>
+    <p id="question">Yukarı ve aşağı kuarklar bütün elementleri oluşturmalarına rağmen bugüne kadar keşfedilmiş tek kuark çifti
+        değildir. Elektrik yükü olarak aynı ama kütlesi ilk kuark çiftinden daha büyük iki kuark çiftinin daha olduğunu
+        biliyoruz. Bu çiftler tılsım-garip ve üst-alt diye adlandırılır. Eğer bütün elementlerin çekirdekleri yukarı ve aşağı
+        kuarklardan meydana geldiyse diğer kuark çiftleri neredeler ve onların var olduklarını nereden biliyoruz?</p>
+    <p class="highLight">This is P with CLASS="highLight</p>
+    <!--You should use space while listing elements in tags.-->
+    <div class="mainPoint highLight"> The main point of the entire article is this</div>
+
+</body>
+</html>

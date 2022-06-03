@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Combinig Selectors</title>
+
+</head>
+<style>
+
+/* ELEMENT WITH CLASS SELECTOR */
+/*every p that has class="big"*/   
+/*lach of space between the element and class definition*/ 
+    p.big {
+        font-size: 20px;
+    }
+
+/*CHILD SELECTOR*/
+/*selector followed by a right-angle bracket, followed by another selector.*/
+/*every p that is a direct child of article*/
+    article > p {
+        color:blue;
+    }
+
+/*DESCENDANT SELECTOR*/
+/*selector space another selector*/
+/*every p that is inside(at any level) of article*/
+    article  p {
+        color:blue;
+    }
+
+/*No limited to element selectors! */
+/*for examples: */
+
+/*every p that is inside (at any level) an element with class="colored"*/
+    .colored p {
+        color: cornflowerblue;
+    }
+
+/*every element with class="colored" which is direct child of article element*/
+    article > .colored {
+        color: darkcyan;
+    }
+</style>
+
+<body>
+    
+</body>
+</html>

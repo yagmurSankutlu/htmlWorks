@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Two Column Design</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    div {
+        background-color: aqua;
+    }
+
+    #p1,ul {
+        width: 50%;
+        /*the reason they are flexible is because 
+        we specified them as a percentage of its container
+        elemenet*/
+        border:2px solid gold;
+        float: left;
+        padding: 10px;
+    }
+
+    #p1 {
+        background-color:olivedrab ;
+    }
+
+    .p2 {
+        background-color: orange;
+    }
+
+    section {
+        clear: left;
+    }
+/*floats are taken out of normal document flow
+  Floats do not have vertical margin collapse 
+  To resume normal document flow, use the "clear" property.*/
+
+</style>
+</head>
+<body>
+   <div>
+       <p id="p1">
+        floats are taken out of normal document flow
+       </p>
+       
+       <p>
+           <ul class="p2">
+            <li>Floats do not have vertical margin collapse.</li>
+            <li>To resume normal document flow, use the "clear" property.</li>
+           </ul>
+       </p>
+   </div> 
+</body>
+</html>
